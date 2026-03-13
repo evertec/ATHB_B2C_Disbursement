@@ -38,12 +38,15 @@ API Services responsible for managing disbursement transactions (Business to Con
 
 Before using the ATH Móvil's disbursement services you need:
 
-1.  **Authentication:** An API Key/Token provided by ATH Móvil.
-2.  **Public Token:** The identifier for the business account.
-3.  **Headers:**
+1. **Onboarding & mTLS Certificate**
+   - The business must complete the onboarding process with Evertec or its Financial Institution.
+   - A **Mutual TLS (mTLS) Certificate** issued and registered with Evertec is required in order to securely access the services.
+2.  **Authentication:** An API Key/Token provided by ATH Móvil.
+3.  **Public Token:** The identifier for the business account.
+4.  **Headers:**
     * `Content-Type: application/json`
     * `Accept: application/json`
-    * `Authorization: <api_key>` (Required for most endpoints).
+    * `Authorization: <auth_token>` (Required for Authorize service).
 
 ## Validate Users
 
